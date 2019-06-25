@@ -1,0 +1,30 @@
+html, body { height: 100%; }
+
+.example-card {
+    max-width: 400px;
+  }
+  
+.example-header-image {
+    background-image: url('../../assets/images/washington_dc.jpg');
+    background-size: cover;
+}
+
+.wrapper {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;    
+}
+
+.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(51, 121, 226, 0.062);
+    transition: background-color 0.5s;
+    width: 40%;
+    height: 100%;
+}

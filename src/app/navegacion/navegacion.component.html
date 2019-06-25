@@ -1,0 +1,41 @@
+
+<mat-toolbar style="color:#ffffff; background-color:#2196F3">
+  <button  mat-icon-button (click)="onToggleSidenav()">
+      <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+      <button mat-menu-item [routerLink]="['/radicacion']">
+          <span>Radicación</span>
+      </button>
+      <button mat-menu-item (click)="utils.logout()">
+          <span>Programación</span>
+      </button>
+      <button mat-menu-item [routerLink]="['/app/addUser']">
+          <span>Resultados</span>
+      </button>
+  </mat-menu>
+<span>Siavi</span>
+<span class="example-spacer"></span>
+<span class="separador"><a [routerLink]="['/home']" [fragment]="'inicio'">INICIO</a></span>
+<span class="separador"><a [routerLink]="['/home']" [fragment]="'interes'" (click)="scrollToAnchor()">INFORMACIÓN DE INTERÉS</a></span>
+<span class="separador"><a [routerLink]="['/consultaGeneral']">CONSULTAR PROCESO</a></span>
+<span class="example-spacer"></span>
+<!--<span class="separador">INGRESAR</span>-->
+<span  style="font-size:12px;"> Carlos Andres</span>
+<button mat-icon-button [matMenuTriggerFor]="menuPerson" >
+  <mat-icon>person</mat-icon>
+</button>
+<mat-menu #menuPerson="matMenu">
+    <button  mat-menu-item [routerLink]="['login']">
+        <span>Ingresar</span>
+    </button>
+    <button  mat-menu-item (click)="utils.logout()" [routerLink]="['home']">
+      <!--<button mat-menu-item (click)="utils.logout()" [routerLink]="['home']">-->
+        <span>Salir</span>
+    </button>
+</mat-menu>
+<!--<button mat-icon-button [routerLink]="['home']">
+    <mat-icon >home</mat-icon>
+</button>-->
+
+</mat-toolbar>

@@ -1,0 +1,17 @@
+
+.example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .submenu {
+    overflow-y: hidden;
+    transition: 300ms ease-in-out;
+    height: 0;
+  }
+  .submenu.expanded {
+    height: 160px;
+  }

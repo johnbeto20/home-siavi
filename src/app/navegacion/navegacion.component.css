@@ -1,0 +1,32 @@
+.example-icon {
+    padding: 0 14px;
+}
+  
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.separador {
+  font-size:12px; 
+  padding-left: 2%;
+}
+
+a:link {
+  color: rgb(255, 255, 255);
+  text-decoration:none; 
+}
+
+/* visited link */
+a:visited {
+  color: rgb(255, 255, 255);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* selected link */
+a:active {
+  color: rgb(255, 255, 255);
+}
